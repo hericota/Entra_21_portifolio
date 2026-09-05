@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Henrique Galvão, desenvolvedor Full Stack. Conheça minha trajetória no Entra21 e meu interesse por tecnologia, programação e design.">
+    <meta name="theme-color" content="#101e38">
     <link rel="stylesheet" href="css/style.css">
-    <title>Henrique Galvão</title>
+    <title>Henrique Galvão | Desenvolvedor Full Stack</title>
 </head>
-
-
 <body>
-    <main class="container">
-        <div class="card">
-            <div class="area-imagem">
-                <img src="img/perfil.jpeg" alt="Foto de Henrique" class="foto">
-                <h1>Henrique Galvão</h1>
-                <h2>Desenvolvedor Full Stack</h2>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="header container">
+        <a class="brand" href="#inicio" aria-label="Henrique Galvão — início">HG<span aria-hidden="true">.</span></a>
+        <nav aria-label="Navegação principal">
+            <a href="#sobre">Sobre mim</a>
+            <a href="#trajetoria">Trajetória</a>
+            <a class="nav-github" href="https://github.com/hericota" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a>
+        </nav>
+    </header>
+
+    <main id="conteudo" class="container" tabindex="-1">
+        <section class="hero" id="inicio" aria-labelledby="titulo">
+            <div class="hero-copy">
+                <p class="eyebrow">PORTFÓLIO / ENTRA21</p>
+                <h1 id="titulo">Henrique<br><span>Galvão.</span></h1>
+                <p class="role">Desenvolvedor Full Stack</p>
+                <p class="intro">Tecnologia, programação e design.<br>Transformando aprendizado em novas possibilidades.</p>
+                <a class="button" href="https://github.com/hericota" target="_blank" rel="noopener noreferrer">Conheça meu GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a>
             </div>
-            <p>
-                Sou apaixonado por tecnologia, programação e design.
-                Durante o Entra21 desenvolvi minhas habilidades em
-                desenvolvimento web, aprendendo a criar aplicações modernas
-                utilizando HTML, CSS, JavaScript e outras tecnologias.
-            </p>
-            <h3>Expectativas</h3>
-            <p>Eu cheguei ao Entra21 com medo, sem saber se eu era capaz de entrar nessa profissão. Porém, ao longo
-                desse curso, percebi o quão bom eu sou no que faço, graças ao Entra21.
-            </p>
-
-            <div class="info">
-                <div class="card" id="interno_card">
-                    <strong>Idade</strong>
-                    <span>17 anos</span>
+            <figure class="portrait">
+                <div class="portrait-frame">
+                    <img src="img/perfil.jpeg" alt="Henrique Galvão" class="foto" fetchpriority="high">
                 </div>
+                <figcaption><span>Henrique Galvão</span><span>Santa Catarina, Brasil</span></figcaption>
+            </figure>
+        </section>
 
-                <div class="card" id="interno_card">
-                    <strong>Cidade</strong>
-                    <span>Santa Catarina</span>
-                </div>
-
-                <div class="card" id="interno_card">
-                    <strong>Objetivo</strong>
-                    <span>Atuar como Desenvolvedor</span>
-                </div>
+        <section class="about section" id="sobre" aria-labelledby="sobre-titulo">
+            <div class="section-heading">
+                <p class="eyebrow">01 / SOBRE MIM</p>
+                <h2 id="sobre-titulo">Curiosidade que<br>vira aprendizado.</h2>
             </div>
-
-            <div class="redes">
-                <a href="https://github.com/hericota" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <div class="section-copy">
+                <p>Sou apaixonado por tecnologia, programação e design. Durante o Entra21, desenvolvi minhas habilidades em desenvolvimento web, aprendendo a criar aplicações com HTML, CSS, JavaScript e outras tecnologias.</p>
+                <ul class="skills" aria-label="Tecnologias que estudo">
+                    <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                </ul>
             </div>
-        </div>
+        </section>
+
+        <section class="journey section" id="trajetoria" aria-labelledby="trajetoria-titulo">
+            <div class="section-heading">
+                <p class="eyebrow">02 / MINHA TRAJETÓRIA</p>
+                <h2 id="trajetoria-titulo">Da dúvida<br>à confiança.</h2>
+            </div>
+            <div class="section-copy">
+                <p>Cheguei ao Entra21 com receio, sem saber se era capaz de seguir nessa profissão. Ao longo do curso, descobri meu potencial e ganhei confiança no que consigo construir.</p>
+                <p class="journey-goal">Meu próximo passo é atuar como desenvolvedor e continuar evoluindo a cada projeto.</p>
+            </div>
+        </section>
+
+        <dl class="info" aria-label="Informações pessoais">
+            <div class="info-card"><dt>Idade</dt><dd>17 <span>anos</span></dd></div>
+            <div class="info-card"><dt>Localização</dt><dd>Santa Catarina</dd></div>
+            <div class="info-card"><dt>Objetivo</dt><dd>Atuar como desenvolvedor</dd></div>
+        </dl>
     </main>
-</body>
 
+    <footer class="footer container">
+        <p>Henrique Galvão <span> / Portfólio Entra21</span></p>
+        <a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+    </footer>
+</body>
 </html>
