@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Henrique Galvão, desenvolvedor Full Stack. Conheça minha trajetória no Entra21 e meu interesse por tecnologia, programação e design.">
+    <meta name="theme-color" content="#090d15">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tecnologias | Henrique Galvão</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="header container">
+        <a class="brand" href="index.html#inicio" aria-label="Henrique Galvão — início"><span aria-hidden="true">&lt;</span>HG<span aria-hidden="true"> /&gt;</span></a>
+        <nav aria-label="Navegação principal">
+            <a href="index.html#sobre">Sobre mim</a>
+            <a href="index.html#trajetoria">Trajetória</a>
+            <a href="tecnologias.html" aria-current="page">Tecnologias</a>
+            <a class="nav-github" href="https://github.com/hericota" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a>
+        </nav>
+    </header>
+
+    <main id="conteudo" class="container" tabindex="-1">
+ <section class="tech-intro"><p class="eyebrow">~/ tecnologias</p><h1>Minha caixa<br>de <span>ferramentas.</span></h1><p class="intro">Tecnologias que estudo e coloco em prática no desenvolvimento web.</p></section>
+ <section aria-label="Tecnologias">
+ <div class="filters" role="group" aria-label="Filtrar tecnologias" hidden><button type="button" data-filter="all" aria-pressed="true">Todas</button><button type="button" data-filter="estrutura" aria-pressed="false">Estrutura</button><button type="button" data-filter="visual" aria-pressed="false">Visual</button><button type="button" data-filter="interacao" aria-pressed="false">Interação</button></div>
+ <p id="filter-result" class="result-count" role="status" aria-live="polite" hidden>3 tecnologias</p>
+ <div class="tech-grid"><article class="tech-card" data-category="estrutura" data-spotlight>
+ <div class="tech-top"><span class="tech-symbol" aria-hidden="true">&lt;/&gt;</span><span class="eyebrow">/01</span></div>
+ <h2>HTML</h2><h3>A estrutura de cada ideia.</h3><p>Organização do conteúdo e criação de páginas web.</p>
+ <details><summary>Ver aplicação prática</summary><p><strong>Neste portfólio:</strong> Seções semânticas, navegação entre páginas, links e conteúdo acessível.</p></details></article><article class="tech-card" data-category="visual" data-spotlight>
+ <div class="tech-top"><span class="tech-symbol" aria-hidden="true">{ }</span><span class="eyebrow">/02</span></div>
+ <h2>CSS</h2><h3>Design que ganha forma.</h3><p>Estilos, layouts responsivos e movimento na interface.</p>
+ <details><summary>Ver aplicação prática</summary><p><strong>Neste portfólio:</strong> Grid, adaptação para celular, tema escuro e efeitos de interação.</p></details></article><article class="tech-card" data-category="interacao" data-spotlight>
+ <div class="tech-top"><span class="tech-symbol" aria-hidden="true">JS</span><span class="eyebrow">/03</span></div>
+ <h2>JavaScript</h2><h3>Interfaces que respondem.</h3><p>Lógica e comportamento para experiências interativas.</p>
+ <details><summary>Ver aplicação prática</summary><p><strong>Nesta página:</strong> Filtros de tecnologias e uma demonstração de estilos que responde aos controles.</p></details></article></div></section>
+ <section class="playground" aria-labelledby="lab-title" hidden>
+ <div><p class="eyebrow">// EXPERIMENTE</p><h2 id="lab-title">Um pouco de CSS.<br>Na prática.</h2><p class="intro">Mude os valores e veja o cartão se transformar.</p>
+ <div class="lab-controls"><label for="accent">Cor de destaque <input type="color" id="accent" value="#7aa7ff"></label><label for="radius">Cantos <output id="radius-value" for="radius">16 px</output><input type="range" id="radius" min="0" max="48" value="16"></label><button type="button" id="reset-demo">Restaurar</button></div></div>
+ <div class="demo-area"><div class="demo-card" id="demo-card"><span aria-hidden="true">&lt;/&gt;</span><h3>Ideias em código.</h3><p>HTML estrutura.<br>CSS transforma.<br>JavaScript conecta.</p></div><pre aria-label="CSS do exemplo"><code id="demo-code">border-color: #7aa7ff;
+border-radius: 16px;</code></pre></div>
+ </section></main>
+ <footer class="footer container"><p>Henrique Galvão <span>/ Tecnologias</span></p><a href="index.html">Voltar ao portfólio <span aria-hidden="true">↗</span></a></footer></body></html>
